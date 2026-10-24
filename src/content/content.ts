@@ -32,7 +32,7 @@ export const header = {
 
 export const hero = {
   headline:
-    "Focus on growing your business. We’ll handle the books.",
+    "Focus on growing your business.\nWe’ll handle the books.",
   subheadline:
     "Accurate bookkeeping for small businesses, so you can do what you do best.",
   primaryCta: {
