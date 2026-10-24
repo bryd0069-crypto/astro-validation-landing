@@ -1,5 +1,8 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+/* 1. Import your custom typography from Google Fonts */
+@import url('https://googleapis.com');
+
 @plugin "@tailwindcss/forms";
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -7,7 +10,7 @@
   /* 2. Map the custom fonts to Tailwind's layout families */
   --font-serif: 'Playfair Display', serif;
   --font-sans: 'Inter', sans-serif;
-  
+
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
 
@@ -163,7 +166,8 @@
     @apply border-border outline-outline/50;
   }
   body {
-    @apply bg-background text-foreground scheme-light dark:scheme-dark;
+    /* 3. Give your entire app the clean sans-serif base layout */
+    @apply bg-background text-foreground font-sans scheme-light dark:scheme-dark;
   }
   button {
     @apply cursor-pointer;
