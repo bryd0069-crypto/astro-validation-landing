@@ -4,20 +4,20 @@
  */
 
 export const siteConfig = {
-  name: "Astro Validation Landing",
-  title: "Astro Validation Landing - Validate Your Product Idea",
+  name: "Surge Bookkeeping",
+  title: "Surge Bookkeeping",
   description:
     "Build beautiful, high-converting landing pages to test your product idea, gather early interest, and validate market demand—without writing code.",
   image: "/og-image.png",
   quickLinks: [
-    { label: "Features", href: "#features" },
+    { label: "Services", href: "#services" },
     { label: "How It Works", href: "#how-it-works" },
     { label: "FAQ", href: "#faq" }
   ],
   legalLinks: [
     { label: "Privacy Policy", href: "/privacy" },
     { label: "Terms of Service", href: "/terms" },
-    { label: "Contact", href: "mailto:hello@astro-validation-landing.com" }
+    { label: "Contact", href: "mailto:bryd0069@astro-validation-landing.com" }
   ]
 };
 
@@ -25,23 +25,23 @@ export const header = {
   name: siteConfig.name,
   navLinks: siteConfig.quickLinks,
   cta: {
-    label: "Get Early Access",
+    label: "Get Started",
     href: "#cta"
   }
 };
 
 export const hero = {
   headline:
-    "Stop Guessing, Start Validating. Launch Your Idea with Confidence.",
+    "Focus on growing your business. We’ll handle the books.",
   subheadline:
-    "Quickly build beautiful, high-converting landing pages to test your product idea, gather early interest, and validate market demand—without writing a single line of custom code. Get started today with Astro Validation Landing.",
+    "Accurate bookkeeping for small businesses, so you can do what you do best.",
   primaryCta: {
-    label: "Get Early Access Now",
+    label: "Get Started",
     href: "#cta"
   },
   secondaryCta: {
     label: "Learn More",
-    href: "#features"
+    href: "#services"
   },
   image: {
     src: "/images/hero-illustration.png",
