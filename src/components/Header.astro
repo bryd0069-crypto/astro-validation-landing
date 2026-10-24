@@ -15,7 +15,7 @@ const { class: className } = Astro.props;
 	class={`sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur supports-backdrop-filter:bg-background/60 ${className || ""}`}
 >
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-		<div class="flex h-16 items-center md:h-20">
+		<div class="flex h-16 items-center justify-between md:h-20">
 			<!-- Logo -->
 			<a href="#" class="flex items-center gap-2 font-bold text-lg md:text-xl">
 				<Logo />
@@ -60,14 +60,15 @@ const { class: className } = Astro.props;
 						></path>
 					</svg>
 				</button>
+
+				<!-- CTA Button (Desktop) -->
+				<div class="hidden sm:flex">
+					<Button variant="primary" href={header.cta.href}>
+						{header.cta.label}
+					</Button>
+				</div>
 			</div>
 
-			<!-- CTA Button (Desktop) -->
-			<div class="hidden sm:flex">
-				<Button variant="primary" href={header.cta.href}>
-					{header.cta.label}
-				</Button>
-			</div>
 		</div>
 
 		<script>
